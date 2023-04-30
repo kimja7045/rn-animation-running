@@ -7,7 +7,7 @@ const CARD_HEIGHT = CARD_WIDTH * 0.58;
 
 const CARD_ITEMS = ['#aaa', '#bbb', '#ccc', '#ddd', '#eee', '#f2f2f2'];
 
-export default function MobilePay() {
+export default function MobilePayRowAnimation() {
   const cardRef = useRef('fold'); // fold or unfold
   const yAnim = useRef(new Animated.Value(0)).current;
   const rotateZAnim = useRef(new Animated.Value(0)).current;

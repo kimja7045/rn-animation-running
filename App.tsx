@@ -7,25 +7,11 @@
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {StyleSheet, Text, useColorScheme, View} from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import YoutubeMusic from './src/YoutubeMusic/YoutubeMusic';
-import MobilePay from './src/MobilePay/MobilePay';
+import MobilePayRowAnim from './src/MobilePay/MobilePayRowAnim';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -66,7 +52,7 @@ function App(): JSX.Element {
   };
 
   return (
-    <MobilePay />
+    <MobilePayRowAnim />
     // <YoutubeMusic />
 
     // <SafeAreaView style={backgroundStyle}>
